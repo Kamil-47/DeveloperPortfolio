@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
+  background-color: #550197;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding: 0 5%;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/*\\\ STRONA 1 */
+.intro {
+  margin-bottom: 75px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.nickname {
+  padding: 20px 0;
+  font-family: "Monoton", sans-serif;
+  font-size: 3.1em;
+  color: #75a4ff;
+}
+
+.menu_button {
+  box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+  padding: 20px 0;
+  font-size: 4em;
+  color: #fff300;
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 288px;
+  height: 217px;
+  border-radius: 3%;
+  background-color: #290936;
+}
+
+.welcome {
+  margin-top: 40px;
+  width: 288px;
+  height: 119px;
+}
+
+.welcome p {
+  font-size: 2em;
+}
+
+.welcome span {
+  font-size: 2em;
+}
+
+.icons {
+  margin: 15px 30px;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/*\\\ STRONA 2 */
+
+#about h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3.2em;
+}
+
+.underline_about {
+  margin: 2px auto;
+  width: 115px;
+  height: 5px;
+  background-color: #fff300;
+}
+
+.photo_inside {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.photo {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+
+.information {
+  margin: 0 0 75px;
+  padding: 0 8%;
+}
+
+.information p {
+  font-size: 1.4em;
+}
+
+.first {
+  margin-bottom: 26px;
+}
+
+/** Hobbies */
+
+.hobbie_title h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3.2em;
+}
+
+.underline_hobbies {
+  margin: 0 auto 30px;
+  width: 100px;
+  height: 5px;
+  background-color: #fff300;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.card_side {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 30px;
+  background-color: #380063;
+  border-radius: 3%;
+}
+
+.card_side--back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 16px;
+}
+
+.card p {
+  font-family: "Inter", sans-serif;
+  font-size: 2.8em;
+  font-weight: bold;
+}
+
+.card_side--back p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 180px;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.card_side--back p + p {
+  margin-top: -75px;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/** CARD FLIP */
+.card {
+  position: relative;
+  perspective: 1500px;
+  height: 250px;
+  width: 250px;
+  margin-bottom: 30px;
+}
+
+.card_side {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  transition: 0.8s ease;
+  backface-visibility: hidden;
+}
+
+.card_side--back {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card_side--front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card_side--back {
+  transform: rotateY(0);
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/*\\\ STRONA 3 */
+#websites {
+  margin-top: 45px;
+  font-family: "Oswald", sans-serif;
+}
+
+#websites h1 {
+  font-size: 2.8em;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.underline_websites {
+  margin: 2px auto 40px;
+  width: 120px;
+  height: 5px;
+  background-color: #fff300;
+}
+
+h2 + p {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.article {
+  margin-bottom: 80px;
+}
+
+.article_last {
+  margin-bottom: 100px;
+}
+
+.articles img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 3%;
+}
+
+.article_title {
+  padding: 0 14px;
+  font-size: 2.5em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/*\\\ STRONA 4 */
+
+.projects_title {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.underline_projects {
+  margin: 2px auto;
+  width: 82px;
+  height: 5px;
+  background-color: #fff300;
+}
+
+.underline_projects + div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px auto 60px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 340px;
+  margin-bottom: 60px;
+  border-radius: 5%;
+  background-color: #380063;
+}
+
+.fake_image {
+  width: 224px;
+  height: 162px;
+  margin: 16px 0;
+  border-radius: 5%;
+  background-color: rgb(220, 220, 220);
+}
+
+.project_main {
+  display: flex;
+  flex-direction: column;
+}
+
+.project_title {
+  margin: 0 0 10px 13px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.project_description {
+  margin: 0 13px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.project_date {
+  display: flex;
+  align-items: center;
+  width: 54px;
+  height: 20px;
+  margin: 16px 0 0 13px;
+  border-radius: 10px;
+  background-color: #495df9;
+}
+
+.project_date p {
+  margin: 0 auto;
+  font-size: 1.1em;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/*\\\ STRONA 5 */
+
+/** FORMULARZ */
+
+#contact h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.underline_contact {
+  width: 80px;
+  height: 5px;
+  margin: 1px auto;
+  background-color: #fff300;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 42px;
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.form__first {
+  margin-top: 40px;
+}
+
+.contact p {
+  margin-left: 8px;
+  font-size: 1.4em;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: #380063;
+}
+
+.contact__message-bar {
+  align-items: start;
+  height: 140px;
+}
+
+.contact__message-bar p {
+  margin-top: 8px;
+}
+
+.button {
+  width: 250px;
+  margin-top: -5px;
+}
+
+button {
+  align-self: start;
+  width: 100px;
+  height: 40px;
+  font-family: "inter", sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #380063;
+  background-color: white;
+  border: 4px solid #495df9;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  color: white;
+  background-color: #495df9;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/** INFO */
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__section {
+  margin-top: 50px;
+  margin: 50px 0 0 19px;
+  width: 100%;
+  font-family: "roboto", sans-serif;
+}
+
+.contact__title {
+  font-size: 2.4em;
+  font-weight: 500;
+}
+
+.contact__title + p {
+  font-size: 1.6em;
+  color: #aa3bff;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #35006b;
+}
+
+.stopka {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
+}
+
+.stopka span {
+  font-family: "Anta";
+  font-size: 1.3em;
+  font-weight: bold;
+  font-style: italic;
+  color: #0094ff;
+}
+
+/* TODO: 
+? - panel
+? - menu
+? - wszystkie ikonki
+? - zdjęcie
+? - card awers 
+? - cienie pod projektami
+? - cała responsywność
+TODO */
